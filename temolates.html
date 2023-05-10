@@ -4,19 +4,20 @@
         .line{text-align:center;font-family: 'Canterbury' ;font-size: 2em;}
     </style>
 </head>
-<body style="width: 700px">
-<div style="margin: 1em;border: 1px solid darkgoldenrod;border-radius: 3px;background-color: #ADD8E6;height: 600px">
-    <div style="padding:1em;text-align:center;font-family: Canterbury;font-size: 3em;">DIPLOMA CERTIFICATE</div>
+<body style="width: 800px">
+<div style="margin: 1em;border: 1px solid darkgoldenrod;border-radius: 3px;background-color: #ADD8E6;height: 700px">
+<div style="padding:1em;text-align:left;font-family: Canterbury;font-size: 1em;">Certificate no: {{credentialSubject.certNo}}</div> 
+<div style="padding:1em;text-align:center;font-family: Canterbury;font-size: 3em;">DIPLOMA CERTIFICATE</div>
     <table>
         <tr>
-        <td valign="bottom" style="width: 80px"><img style="float:left;padding-left: 1em;" src="{{qrCode}}" alt="qr_code"/>
+        <td valign="center" style="width: 80px"><img style="float:left;padding-left: 1em;" src="{{qrCode}}" alt="qr_code"/>
     </td>
     <td width="50%">
     <div class="line">
         <div>This is to certify that</div>
         <div><b>{{credentialSubject.name}}</b></div>
         <div>has successfully completed training requirements for</div>
-        <div style="padding: 1em;font-family: 'Canterbury' ">{{credentialSubject.trainedOn}} </div>
+        <div style="padding: 1em;font-family: 'Canterbury' "><b>{{credentialSubject.trainedOn}}</b> </div>
         <div>and is awarded this certificate on </div>
         <div>{{dateFormat proof.created "dddd, MMMM Do YYYY"}}</div>
 
