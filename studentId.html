@@ -16,7 +16,7 @@
             <div class="left-strip"></div>
             <div class="id-details">
                 <div class="header">
-                    <div class="logo"><img src="{{credentialSubject.orgLogo}}" alt="UPSMF and Niramaya logo"></div>
+                    <div class="logo"><img src="{{orgLogo}}" alt="UPSMF and Niramaya logo"></div>
                 </div> 
                 <div class="midSection">
                     <h1 class="instituteTitle">Central Institute of Higher  Studies (CIHTS)</h1>
@@ -32,22 +32,22 @@
                          <div class="idDetailsDes dob">
                             <p class="title">Date of birth</p>
                             <p class="sep">:</p>
-                            <p class="result">{{dob}}</p>
+                            <p class="result">{{credentialSubject.dob}}</p>
                          </div>
                          <div class="idDetailsDes gender">
                             <p class="title">Gender</p>
                             <p class="sep">:</p>
-                            <p class="result">{{sex}}</p>
+                            <p class="result">{{credentialSubject.gender}}</p>
                          </div>
                          <div class="idDetailsDes course">
                             <p class="title">Qualification</p>
                             <p class="sep">:</p>
-                            <p class="result">{{course}}</p>
+                            <p class="result">{{credentialSubject.trainingTitle}}</p>
                          </div>
                          <div class="idDetailsDes rollNo">
                             <p class="title">Roll number</p>
                             <p class="sep">:</p>
-                            <p class="result">{{rollNumber}}</p>
+                            <p class="result">{{credentialSubject.rollNumber}}</p>
                          </div>
                     </div>
 
