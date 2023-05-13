@@ -29,6 +29,21 @@
       "name":"schema:Text"
     }
     },
+    "gender":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#gender",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "qualification":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    }
+    ,
+
+    
     "trainedOn":{
     "@id":"https://github.com/sunbird-specs/vc-specs#trainedOn",
     "@context": {
