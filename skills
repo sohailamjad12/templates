@@ -35,6 +35,12 @@
       "name":"schema:Text"
     }
     },
+    "dob":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#dob",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
     "qualification":{
     "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
     "@context": {
