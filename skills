@@ -23,6 +23,12 @@
       "name":"schema:Text"
     }
     },
+    "orgLogo":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
     "trainedOn":{
     "@id":"https://github.com/sunbird-specs/vc-specs#trainedOn",
     "@context": {
