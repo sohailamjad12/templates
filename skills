@@ -23,6 +23,18 @@
       "name":"schema:Text"
     }
     },
+    "enrollmentNumber":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#enrollmentNumber",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "examYear":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
     "orgLogo":{
     "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
     "@context": {
