@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "SkillCertificate": {
+      "@id": "https://github.com/sunbird-specs/vc-specs#SkillCertificate",
+      "@context": {
+        "id": "@id",
+        "@version": 1.1,
+        "@protected": true,
+        "skills": "schema:Text"
+      }
+    },
+    "Person":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#Person",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "rollNumber":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#rollNumber",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "enrollmentNumber":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#enrollmentNumber",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "examYear":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "orgLogo":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "gender":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#gender",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "dob":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#dob",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "qualification":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    }
+    ,
+    "address":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "mother":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "father":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "trainning-period":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "trainning-center":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "exam-body":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "trainedOn":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainedOn",
+    "@context": {
+      "name":"schema:Text"
+    }
+    }
+  }
+}
