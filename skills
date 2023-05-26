@@ -29,13 +29,13 @@
       "name":"schema:Text"
     }
     },
-    "examYear":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
+    "passingYear":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#passingYear",
     "@context": {
       "name":"schema:Text"
     }},
-    "examMonth":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#examMonth",
+    "passingMonth":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#passingMonth",
     "@context": {
       "name":"schema:Text"
     }},
