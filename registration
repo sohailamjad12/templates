@@ -35,6 +35,12 @@
       "name":"schema:Text"
     }
     },
+    "examMonth":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
     "orgLogo":{
     "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
     "@context": {
@@ -78,20 +84,26 @@
       "name":"schema:Text"
     }
     },
-    "trainning-period":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "trainningPeriod":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainningPeriod",
     "@context": {
       "name":"schema:Text"
     }
     },
-    "trainning-center":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "trainningCenter":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainningCenter",
     "@context": {
       "name":"schema:Text"
     }
     },
-    "exam-body":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "examBody":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#examBody",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "barCode":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#barCode",
     "@context": {
       "name":"schema:Text"
     }
