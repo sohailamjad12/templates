@@ -33,14 +33,32 @@
     "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
     "@context": {
       "name":"schema:Text"
-    }
-    },
+    }},
+    "examMonth":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
+    "@context": {
+      "name":"schema:Text"
+    }},
     "orgLogo":{
     "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
     "@context": {
       "name":"schema:Text"
-    }
-    },
+    }},
+    "candidatePic":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
+    "@context": {
+      "name":"schema:Text"
+    }},
+    "signaturePic":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
+    "@context": {
+      "name":"schema:Text"
+    }},
+     "barcode":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
+    "@context": {
+      "name":"schema:Text"
+    }},
     "gender":{
     "@id":"https://github.com/sunbird-specs/vc-specs#gender",
     "@context": {
@@ -58,10 +76,37 @@
     "@context": {
       "name":"schema:Text"
     }
+    },
+    "mother":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
     }
-    ,
-
-    
+    },
+    "father":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "examBody":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "trainningPeriod":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "regNumber":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
     "trainedOn":{
     "@id":"https://github.com/sunbird-specs/vc-specs#trainedOn",
     "@context": {
