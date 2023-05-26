@@ -67,19 +67,19 @@
     }
     ,
     "address":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@id":"https://github.com/sunbird-specs/vc-specs#address",
     "@context": {
       "name":"schema:Text"
     }
     },
     "mother":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@id":"https://github.com/sunbird-specs/vc-specs#mother",
     "@context": {
       "name":"schema:Text"
     }
     },
     "father":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@id":"https://github.com/sunbird-specs/vc-specs#father",
     "@context": {
       "name":"schema:Text"
     }
