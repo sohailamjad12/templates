@@ -25,7 +25,7 @@
                 </header>
                     <div class="mainSection">
                         <h4 class="cer-name">Enrollment / Registration Certificate</h4>
-                        <h4 class="cer-type">{{credentialSubject.course}}</h4>
+                        <h4 class="cer-type">{{credentialSubject.trainingTitle}}</h4>
                         <div class="en-details">
                             <div class="subject number">
                                 <p class="title">No.</p>
@@ -60,7 +60,7 @@
                             <div class="subject passyear">
                                 <p class="title">Year of Passing</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.passingyear}}</p>
+                                <p class="result">{{credentialSubject.passingYear}}-{{credentialSubject.passingMonth}}</p>
                             </div>
                             <div class="subject place">
                                 <p class="title">Place</p>
@@ -70,7 +70,7 @@
                             <div class="subject date">
                                 <p class="title">Dated</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.resultdate}}</p>
+                                <p class="result">{{credentialSubject.resultDate}}</p>
                             </div>
                         </div>
     
@@ -83,7 +83,7 @@
                         <div class="f-division">
                             <div class="profile-scan">
                                 <div class="studentID"><img src="{{credentialSubject.orgLogo}}" alt="student ID Photo"></div>
-                                <div class="scanner"><img src="{{credentialSubject.qrCode}}" alt="scanner"></div>
+                                <div class="scanner"><img src="{{qrCode}}" alt="scanner"></div>
     
                             </div>
                             <div class="org-section text-center primary-color">
