@@ -35,7 +35,7 @@
       "name":"schema:Text"
     }},
     "examMonth":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
+    "@id":"https://github.com/sunbird-specs/vc-specs#examMonth",
     "@context": {
       "name":"schema:Text"
     }},
@@ -45,17 +45,17 @@
       "name":"schema:Text"
     }},
     "candidatePic":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
+    "@id":"https://github.com/sunbird-specs/vc-specs#candidatePic",
     "@context": {
       "name":"schema:Text"
     }},
     "signaturePic":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
+    "@id":"https://github.com/sunbird-specs/vc-specs#signaturePic",
     "@context": {
       "name":"schema:Text"
     }},
      "barcode":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
+    "@id":"https://github.com/sunbird-specs/vc-specs#barcode",
     "@context": {
       "name":"schema:Text"
     }},
@@ -78,35 +78,35 @@
     }
     },
     "mother":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@id":"https://github.com/sunbird-specs/vc-specs#mother",
     "@context": {
       "name":"schema:Text"
     }
     },
     "father":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@id":"https://github.com/sunbird-specs/vc-specs#father",
     "@context": {
       "name":"schema:Text"
     }
     },
     "examBody":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@id":"https://github.com/sunbird-specs/vc-specs#examBody",
     "@context": {
       "name":"schema:Text"
     }
     },
     "trainningPeriod":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainningPeriod",
     "@context": {
       "name":"schema:Text"
     }},
     "trainningCenter":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainningCenter",
     "@context": {
       "name":"schema:Text"
     }},
     "regNumber":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@id":"https://github.com/sunbird-specs/vc-specs#regNumber",
     "@context": {
       "name":"schema:Text"
     }
