@@ -111,6 +111,12 @@
       "name":"schema:Text"
     }
     },
+    "address":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#address",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
     "trainedOn":{
     "@id":"https://github.com/sunbird-specs/vc-specs#trainedOn",
     "@context": {
