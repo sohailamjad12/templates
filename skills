@@ -99,8 +99,12 @@
     "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
     "@context": {
       "name":"schema:Text"
-    }
-    },
+    }},
+    "trainningCenter":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
+    "@context": {
+      "name":"schema:Text"
+    }},
     "regNumber":{
     "@id":"https://github.com/sunbird-specs/vc-specs#qualification",
     "@context": {
