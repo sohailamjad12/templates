@@ -126,6 +126,12 @@
       "name":"schema:Text"
     }
     },
+    "trainingTitle":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainingTitle",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
     "trainedOn":{
     "@id":"https://github.com/sunbird-specs/vc-specs#trainedOn",
     "@context": {
