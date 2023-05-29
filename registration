@@ -96,6 +96,24 @@
       "name":"schema:Text"
     }
     },
+    "trainningCenterCode":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainningCenterCode",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "trainingCode":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainingCode",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "dated":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#dated",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
     "examBody":{
     "@id":"https://github.com/sunbird-specs/vc-specs#examBody",
     "@context": {
