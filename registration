@@ -143,6 +143,42 @@
     "@context": {
       "name":"schema:Text"
     }
+    },
+    "trainingFromMonth":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainingFromMonth",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "trainingFromYear":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainingFromYear",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "trainingToMonth":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainingToMonth",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "trainingToYear":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#trainingToYear",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "place":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#place",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "registrationNo":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#registrationNo",
+    "@context": {
+      "name":"schema:Text"
+    }
     }
   }
 }
