@@ -66,6 +66,13 @@
     }
     }
     ,
+    "yearsOfTheCourse":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#yearsOfTheCourse",
+    "@context": {
+      "name":"schema:array"
+    }
+    }
+    ,
     "address":{
     "@id":"https://github.com/sunbird-specs/vc-specs#address",
     "@context": {
