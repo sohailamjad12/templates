@@ -41,6 +41,12 @@
       "name":"schema:Text"
     }
     },
+    "compositeData":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
     "orgLogo":{
     "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
     "@context": {
