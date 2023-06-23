@@ -12,6 +12,41 @@
 
     </style>
 </head>
+	    <script>
+        // JSON data
+    var jsonData2 = [{"name":"COMMUNITY HEALTH NURSING","max-ext":"75","max-int":"25","obt-ext":"46","obt-int":"20"},
+    {"name":"HEALTH PROMOTION","max-ext":"75","max-int":"25","obt-ext":"40","obt-int":"19"},{"name":"HEALTH PROMOTION","max-ext":"75","max-int":"25","obt-ext":"40","obt-int":"19"},{"name":"HEALTH PROMOTION","max-ext":"75","max-int":"25","obt-ext":"40","obt-int":"19"}];
+
+        // Get the table header row
+        var headerRow = document.getElementById("headerRow");
+
+        // Get the data rows container
+        var dataRows = document.getElementById("dataRows");
+
+        function renderTable() {
+            // Create table header from JSON keys
+            var keys = Object.keys(jsonData2[0]);
+            keys.forEach(function(key) {
+                var th = document.createElement("th");
+                th.textContent = key;
+                headerRow.appendChild(th);
+            });
+
+            // Create table rows from JSON data
+            jsonData.forEach(function(rowData) {
+                var row = document.createElement("tr");
+                keys.forEach(function(key) {
+                    var td = document.createElement("td");
+                    td.textContent = rowData[key];
+                    row.appendChild(td);
+                });
+                dataRows.appendChild(row);
+            });
+        }
+
+        // Call the renderTable function to render the table        
+        
+    </script>
 <body>
     <div class="reg-certificate">
         
@@ -173,6 +208,11 @@
                                         <td class="border-0 t-right" colspan="3">EXAM MONTH YEAR : <spna clsss="year">MARCH - 2019</spna></td>
                                        
                                       </tr>
+				      <table class="resultSheet" width="100%" border="0" cellspacing="0" cellpadding="3">
+					<thead><tr id="headerRow"></tr></thead>
+					<tbody id="dataRows"></tbody>
+				      </table>
+				       <script>renderTable();</script>
                                       <table class="resultSheet" width="100%" border="0" cellspacing="0" cellpadding="3">
                                         
                                           <tr>
@@ -185,16 +225,6 @@
                                             <th scope="col">TOTAL</th>
                                             
                                           </tr>
-                                          {{{credentialSubject.compositeData}}}
-                                          <!--tr>
-                                            <td scope="col">I</td>
-                                            <td scope="col" class="t-left" >MIDWIFERY (T) </td>
-                                            <td scope="col">75</td>
-                                            <td scope="col">25</td>
-                                            <td scope="col">49</td>
-                                            <td scope="col">20</td>
-                                            <td scope="col">69</td>
-                                          </tr-->
                                           <tr>
                                           <td scope="col">II</td>
                                             <td scope="col" class="t-left">HEALTH CENTER MANAGEMENT </td>
