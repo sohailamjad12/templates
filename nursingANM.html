@@ -11,42 +11,115 @@
       .d-block,img{display:block}.m-0,header p{margin:0}.mainSection .cer-name,.mainSection .cer-type,.text-uppercase{text-transform:uppercase}.primary-color,header h3{color:#ec1f07}.mb-0,.org-section span,header h3{margin-bottom:0}.law .act,.org-section span{line-height:1.125rem;font-family:Calibri}.law .act,.org-section span,.subject .result,body{font-family:Calibri}@font-face{font-family:Calibri;src:url(https://fonts.gstatic.com/l/font?kit=J7afnpV-BGlaFfdAhLEY67FIEjg&skey=a1029226f80653a8&v=v15) format('woff2');font-weight:400;font-style:normal}@font-face{font-family:Calibri;src:url(https://fonts.gstatic.com/l/font?kit=J7aanpV-BGlaFfdAjAo9_pxqHxIZrCE&skey=cd2dd6afe6bf0eb2&v=v15) format('woff2');font-weight:700;font-style:normal}*,::after,::before{box-sizing:border-box}html{font-size:16px}body{color:#0e0e10;font-weight:400}img{max-width:100%}.mt-0{margin-top:0}.mt-5{margin-top:.3125rem}.mt-10{margin-top:10px}.mt-16{margin-top:1rem}.mb-5{margin-bottom:.3125rem}.mb-10{margin-bottom:.625rem}.mb-15{margin-bottom:.9375rem}.ft-8{font-size:.5rem}.alpha-5{opacity:.5}.small{font-size:.625rem;line-height:.75rem}.opt-8{opacity:80%}.text-right{text-align:right}.mainSection .cer-type,.resultSheet td,.text-center,header h3,header p,table th{text-align:center}.secondaryColor{color:#2020a7}.cc-container{position:relative;z-index:1;width:100%}.bg-upsmf,.watermark{position:absolute;left:50%;transform:translate(-50%,-50%);z-index:0}.bg-upsmf{top:58%;bottom:0;width:42%;margin:0 auto;opacity:.15}.watermark{top:50%;WIDTH:50%}.en-certificate{width:700px;height:auto;background-color:#fff;margin:auto;border:1px solid grey;padding:.8rem 1rem;position:relative;display:flex}.h1,h1,h2,h3,h4,h5,h6{line-height:1.5;font-family:Calibri;font-weight:700;margin-bottom:10px}.h3,h3{font-size:1.5rem;line-height:1.5}p{font-size:.875rem;line-height:1.2}hr{border:none;background-color:rgba(0,0,0,.15);height:1px;margin:10px 0}header{display:flex;align-items:center}header h3{margin-top:5px;padding:10px}.logo{max-width:70px}.mainSection .anm-details{width:100%;margin:.8rem auto 0}.mainSection .cer-name{text-align:center;font-size:20px;color:#ec1f07;margin:1rem 0 0}.mainSection .cer-type{font-size:.875rem;margin:5px 0 0;color:#2020a7}.law .act,.subject p{margin:0;text-transform:uppercase}.mainSection .anm-details .subject{display:flex;margin-bottom:0}.subject .title{width:9rem}.subject .sep{width:1rem}.subject .result{font-weight:700;flex:0 0 69%}.f-division{display:flex;justify-content:space-between;align-items:start}.f-division .profile-scan{width:70%;display:flex;gap:10px}.f-division .org-section{width:30%}.f-division .profile-scan .scanner,.f-division .profile-scan .studentID{width:80px;height:70px;border:2px solid #000;overflow:hidden;padding:6px;display:flex;align-items:center;justify-content:center}.f-division .profile-scan .sig-attest{width:110px;height:70px;overflow:hidden;border:2px solid #000;display:flex;align-items:center;justify-content:center}.org-section span{font-size:.875rem;font-weight:700}.org-section span img{height:25px;margin:0 auto}.law .act{padding:0;font-size:.875rem;font-weight:700}table,td,th{border:1px solid #000;border-collapse:collapse;font-size:12px;text-align:left;font-weight:700;text-transform:uppercase}.border-0{border:none!important}.border-b{border-bottom:none!important}.t-left{text-align:left!important}.t-right{text-align:right!important}.resultSheet td:first-child{list-style-type:upper-roman}.period{font-size:13px;margin-top:15px;font-weight:700}
 
     </style>
+  <script>
+    const yearsOfTheCourse = [
+      {
+        "courseYear": "First Year",
+        "examYear": "2020",
+        "examMonth": "March",
+        "subject": [
+          {"name": "COMMUNITY HEALTH NURSING", "max-ext": "75", "max-int": "25", "obt-ext": "46", "obt-int": "20", "total": "66"},
+          {"name": "HEALTH PROMOTION", "max-ext": "75", "max-int": "25", "obt-ext": "40", "obt-int": "19", "total": "59"}
+        ]
+      },
+      {
+        "courseYear": "Second Year",
+        "examYear": "2020",
+        "examMonth": "March",
+        "subject": [
+          {"name": "COMMUNITY HEALTH NURSING", "max-ext": "75", "max-int": "25", "obt-ext": "46", "obt-int": "20", "total": "66"},
+          {"name": "HEALTH PROMOTION", "max-ext": "75", "max-int": "25", "obt-ext": "40", "obt-int": "19", "total": "66"}
+        ]
+      },
+      {
+        "courseYear": "Final Year",
+        "examYear": "2020",
+        "examMonth": "March",
+        "subject": [
+          {"name": "COMMUNITY HEALTH NURSING", "max-ext": "75", "max-int": "25", "obt-ext": "46", "obt-int": "20", "total": "66"},
+          {"name": "HEALTH PROMOTION", "max-ext": "75", "max-int": "25", "obt-ext": "40", "obt-int": "19", "total": "66"}
+        ]
+      }
+    ];
+
+    yearsOfTheCourse.forEach(course => {
+      const table = document.createElement("table");
+
+      const caption = document.createElement("caption");
+      const courseYearCell = document.createElement("span");
+      courseYearCell.className = "course-year";
+      courseYearCell.textContent = "YEAR OF THE COURSE :"+course.courseYear;
+      caption.appendChild(courseYearCell);
+
+      const examDetailsCell = document.createElement("span");
+      examDetailsCell.className = "exam-details";
+      examDetailsCell.textContent = `    Exam Month Year: ${course.examMonth} ${course.examYear}`;
+      caption.appendChild(examDetailsCell);
+      
+
+      table.appendChild(caption);
+
+      const thead = document.createElement("thead");
+      const headerRow = document.createElement("tr");
+      const headerCell1 = document.createElement("th");
+      headerCell1.textContent = "Subject";
+      const headerCell2 = document.createElement("th");
+      headerCell2.textContent = "Max Ext";
+      const headerCell3 = document.createElement("th");
+      headerCell3.textContent = "Max Int";
+      const headerCell4 = document.createElement("th");
+      headerCell4.textContent = "Obt Ext";
+      const headerCell5 = document.createElement("th");
+      headerCell5.textContent = "Obt Int";
+      const headerCell6 = document.createElement("th");
+      headerCell6.textContent = "Total";
+      headerRow.appendChild(headerCell1);
+      headerRow.appendChild(headerCell2);
+      headerRow.appendChild(headerCell3);
+      headerRow.appendChild(headerCell4);
+      headerRow.appendChild(headerCell5);
+      headerRow.appendChild(headerCell6);
+      thead.appendChild(headerRow);
+      table.appendChild(thead);
+
+      const tbody = document.createElement("tbody");
+      course.subject.forEach(subject => {
+        const row = document.createElement("tr");
+
+        const subjectCell = document.createElement("td");
+        subjectCell.textContent = subject.name;
+        row.appendChild(subjectCell);
+
+        const maxExtCell = document.createElement("td");
+        maxExtCell.textContent = subject["max-ext"];
+        row.appendChild(maxExtCell);
+
+        const maxIntCell = document.createElement("td");
+        maxIntCell.textContent = subject["max-int"];
+        row.appendChild(maxIntCell);
+
+        const obtExtCell = document.createElement("td");
+        obtExtCell.textContent = subject["obt-ext"];
+        row.appendChild(obtExtCell);
+
+        const obtIntCell = document.createElement("td");
+        obtIntCell.textContent = subject["obt-int"];
+        row.appendChild(obtIntCell);
+
+        const totalCell = document.createElement("td");
+        totalCell.textContent = subject.total || "";
+        row.appendChild(totalCell);
+
+        tbody.appendChild(row);
+      });
+
+      table.appendChild(tbody);
+
+      document.body.appendChild(table);
+    });
+  </script>
 </head>
-	    <script>
-        // JSON data
-    var jsonData2 = [{"name":"COMMUNITY HEALTH NURSING","max-ext":"75","max-int":"25","obt-ext":"46","obt-int":"20"},
-    {"name":"HEALTH PROMOTION","max-ext":"75","max-int":"25","obt-ext":"40","obt-int":"19"},{"name":"HEALTH PROMOTION","max-ext":"75","max-int":"25","obt-ext":"40","obt-int":"19"},{"name":"HEALTH PROMOTION","max-ext":"75","max-int":"25","obt-ext":"40","obt-int":"19"}];
 
-        // Get the table header row
-        var headerRow = document.getElementById("headerRow");
-
-        // Get the data rows container
-        var dataRows = document.getElementById("dataRows");
-
-        function renderTable() {
-            // Create table header from JSON keys
-            var keys = Object.keys(jsonData2[0]);
-            keys.forEach(function(key) {
-                var th = document.createElement("th");
-                th.textContent = key;
-                headerRow.appendChild(th);
-            });
-
-            // Create table rows from JSON data
-            jsonData.forEach(function(rowData) {
-                var row = document.createElement("tr");
-                keys.forEach(function(key) {
-                    var td = document.createElement("td");
-                    td.textContent = rowData[key];
-                    row.appendChild(td);
-                });
-                dataRows.appendChild(row);
-            });
-        }
-
-        // Call the renderTable function to render the table        
-        
-    </script>
 <body>
     <div class="reg-certificate">
         
