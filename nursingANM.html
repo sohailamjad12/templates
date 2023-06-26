@@ -68,28 +68,27 @@
                             <div class="subject number">
                                 <p class="title">Roll No.</p>
                                 <p class="sep">:</p>
-                                <p class="result">173123873</p>
+                                <p class="result">{{{credentialSubject.rollNumber}}}</p>
                             </div>
                             <div class="subject name">
                                 <p class="title">Name of Student</p>
                                 <p class="sep">:</p>
-                                <p class="result">SMT. POONAM</p>
+                                <p class="result">{{{credentialSubject.name}}}</p>
                             </div>
                             <div class="subject motherName">
                                 <p class="title">Mother's Name</p>
                                 <p class="sep">:</p>
-                                <p class="result">SMT. RADHIKA</p>
+                                <p class="result">{{credentialSubject.mother}}</p>
                             </div>
                             <div class="subject fatherName">
                                 <p class="title">Father's Name</p>
                                 <p class="sep">:</p>
-                                <p class="result">SRI SHRWAN KUMAR</p>
+                                <p class="result">{{credentialSubject.father}}</p>
                             </div>
                             <div class="subject address">
                                 <p class="title">Address</p>
                                 <p class="sep">:</p>
-                                <p class="result">MAA MATURANI DEVI MAHAVIDYALAYA NURSING PRASIKSHAN KENDRA,
-                                    BALLIA [ 1030 ]</p>
+                                <p class="result">{{credentialSubject.address}}</p>
                             </div>
                             
                             
@@ -302,10 +301,10 @@
 
                         <div class="f-division">
                             <div class="profile-scan">
-                                <div class="studentID"><img src="img/studentPhotos.png" alt="student ID Photo"></div>
+                                <div class="studentID"><img src="{{credentialSubject.orgLogo}}" alt="student ID Photo"></div>
                                
                                 <div class="scanner"><img src="{{qrCode}}" alt="scanner"></div>
-								 <div class="sig-attest border-0"><img src="img/barcode.png" alt="bar code"></div>
+			        <div class="sig-attest border-0"><img src="{{{credentialSubject.barCode}}}" alt="bar code"></div>
     
                             </div>
                             <div class="org-section text-center primary-color">
