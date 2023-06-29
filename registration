@@ -36,13 +36,13 @@
     }
     },
     "examMonth":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
+    "@id":"https://github.com/sunbird-specs/vc-specs#examMonth",
     "@context": {
       "name":"schema:Text"
     }
     },
     "compositeData":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#examYear",
+    "@id":"https://github.com/sunbird-specs/vc-specs#compositeData",
     "@context": {
       "name":"schema:Text"
     }
