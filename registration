@@ -44,7 +44,7 @@
     "compositeData":{
     "@id":"https://github.com/sunbird-specs/vc-specs#compositeData",
     "@context": {
-      "name":"schema:Text"
+      "name":"schema:Object"
     }
     },
     "orgLogo":{
