@@ -31,7 +31,7 @@
                           <div class="subject number">
                               <p class="title">Roll No.</p>
                               <p class="sep">:</p>
-                              <p class="result">{{{credentialSubject.compositeData}}}</p>
+                              <p class="result">{{credentialSubject.rollNumber}}</p>
                           </div>
                           <div class="subject name">
                               <p class="title">Name of Student</p>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="marksDetails">
                       <script>
-                          const yearsOfTheCourse = {{{credentialSubject.yearsOfTheCourse}}};
+                          const yearsOfTheCourse = {{{credentialSubject.compositeData}}};
                           function convertToRoman(num) {
                             var roman = {
                               M: 1000,
