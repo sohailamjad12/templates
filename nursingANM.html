@@ -85,6 +85,7 @@
                             return str;
                           }
                         function replaceSpecial(courseStr) {
+			    const str1 = courseStr.replace(/"/g, '');
                             const str = str1.replace(/&quot;/g, '\"');
                             //console.log(str);
                             const obj = JSON.parse(str);
