@@ -57,7 +57,7 @@
                     </div>
                     <div class="marksDetails">
                       <script>
-                          const yearsOfTheCourse = {{credentialSubject.compositeData}};
+                          
                           function convertToRoman(num) {
                             var roman = {
                               M: 1000,
@@ -84,7 +84,17 @@
 
                             return str;
                           }
-                        
+                        function replaceSpecial(courseStr) {
+                            const str1 = courseStr.replace(/"/g, '');
+                            const str = str1.replace(/&quot;/g, '\"');
+                            //console.log(str);
+                            const obj = JSON.parse(str);
+                            console.log(obj);
+                            return obj;
+                          }
+			const yearsOfTheCourse1 = {{credentialSubject.compositeData}};
+			const yearsOfTheCourse = replaceSpecial(yearsOfTheCourse1);
+			      
                         const div1 = document.getElementsByClassName("marksDetails");
                         const attemptTable2 = document.createElement("table");
                         attemptTable2.className = "class2";
