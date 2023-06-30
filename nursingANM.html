@@ -54,15 +54,7 @@
                           </div>
     
                     </div>
-                    <div class="marksDetails" v-html="content"></div>
-                       <script>
-                         new Vue ({
-                              el: '#app',
-                        data: {
-                                content: '{{{credentialSubject.compositeData}}}'
-                        }
-                                 })
-                       </script>
+                    <div class="marksDetails" v-html="content">{{{credentialSubject.compositeData}}}</div>
           <footer class="mt-16">
 
             <div class="f-division">
