@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Certificate</title>
+</head>
+
+
+<body style="background-color:white;border:black" >
+  <div class="container" style="background-color:white ; margin-left:25rem;margin-right:25rem;padding:8px;">
+	    <div class="details" style="display: flex; justify-content: space-between;padding:6px;margin-left:6rem;margin-right:6rem;">
+		<h5>{{credentialSubject.trainningCenterCode}}</h5>
+		<h5>{{credentialSubject.rollNumber}}</h5>
+	    </div>
+	    <div style="display: flex;justify-content:center;">
+	      	<img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/diploma_SMF.jpg" alt="upsmf watermark images" height="226px" width="658px">
+	    </div>
+	    <div style="display:flex ;flex-direction: column;align-items: center" >
+	    	<h4 style="margin-bottom: auto;">Empowered Under INDIAN MEDICAL DEGREE ACT 1916</h4>
+	    	<h6 style="margin-top: initial;">
+	    	(Government of India Notification Department of Education,Health and Lands No.1964, dated 16<sup>th</sup> December 1926 with effect from 15<sup>th</sup>November 1929)
+	    	</h6>
+	    </div>
+	    <div style="display:flex ;flex-direction: column;background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+	    		url('https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bg-upmf.png'); background-size: contain; background-repeat: no-repeat; background-position:top;">
+
+	    		<h3 style="color: #0000CC;font-size: 20pt; text-align: center;word-spacing: 8px;margin-top:50px;line-height: 40pt;padding-left: 130px;padding-right: 130px;margin-top:auto;">{{credentialSubject.trainingTitle}}</h3>
+	    		<p style="text-indent: 100px;word-spacing: 8px;margin-top:auto;line-height: 40pt;padding-left: 153px;padding-right: 153px;text-align: justify;font-weight: 600;"><i>
+				This is to certify that <font style='font-weight: 1000;'><u>{{credentialSubject.name}}</u></font>
+				D/O <font style='font-weight: 1000;'><u>{{credentialSubject.mother}} & {{credentialSubject.father}}</font style></u> has passed the examination of
+				<font style="font-weight: 1000;">{{credentialSubject.trainingTitle}}</font> held in the month of <font <font style='font-weight: 1000;''><u> {{credentialSubject.resultDate}}</font></u> from the training centre <font <font style='font-weight: 1000;'><u>{{credentialSubject.trainningCenter}}</font style></u> conducted by the<font <font style='font-weight: 1000;'> U.P. State Medical Faculty</font style></i>
+	    		</p>
+	    		
+	    		<p style="word-spacing: 8px;margin-top:auto;margin-bottom: 57px;line-height: 40pt;padding-left: 153px;padding-right: 153px;text-align: justify;">
+				Signed on behalf of the Governing Body of the U.P. State Medical Faculty</p>
+
+	    </div>
+	    
+	    <div style="display:flex ;flex-direction: column;align-items: center;">
+		    <div style="display:flex ;flex-direction: row;justify-content:between;gap:"1.5px;">
+		    	<div style="display:flex ;flex-direction: column;align-items: start;width: 226px;">
+	    		    	<img src="{{qrCode}}"  height= "100px" ><br>
+	    		    	<p style="margin-bottom: 0.5px;margin-top: 0.5px;"><b>5, Sarvapalli,</b></p>
+		    		<p style="margin-bottom: 0.5px;margin-top: 0.5px;"><b>Mall Avenue Road,</b></p>
+		    		<p style="margin-bottom: 0.5px;margin-top: 0.5px;""><b>Lucknow - 226001</b></p>
+		               
+		                <font style="font-size:medium;margin-top:30px"><b>Dated</b> : {{credentialSubject.dated}}</font>
+		        </div>
+		        <div style="display:flex ;flex-direction: column;align-items:center;width: 226px;margin-top: 43px;">
+	    			<img src="{{credentialSubject.orgLogo}}"  border="1" height="175" width="155" ><br>
+		    	</div>
+		    	<div style="display:flex ;flex-direction: column;align-items:end;width: 226px;">
+                                <img src=""  height="25" width="180" >
+				  <p style="color:red;margin-bottom: 0.5px;margin-top: 0.5px;"><b>President / Vice President</b></p>
+  				  <p style="color:red;margin-bottom: 0.5px;margin-top: 0.5px;"><b>U.P. State Medical Faculty</b></p>
+                                   
+                                <p style="color:red;;margin-bottom: 0.5px;margin-top:55px;margin-left:8px;padding-left:172px;padding-right:54px;"><b>Secretary</b></p>
+				  <p style="color:red;margin-bottom: 0.5px;margin-top: 0.5px;margin-bottom:8px"><b>U.P. State Medical Faculty</b></p>
+                                <img src="{{{credentialSubject.barCode}}}"  height="25" width="180" ><br>
+                                <p style="font-size: 8pt;">485</p>
+		    	</div>
+		    </div>
+		    
+	    </div>
+   </div>
+</body>
+
+</html>
