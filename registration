@@ -47,8 +47,8 @@
       "name":"schema:Array"
     }
     },
-    "orgLogo":{
-    "@id":"https://github.com/sunbird-specs/vc-specs#orgLogo",
+    "candidatePics":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#candidatePics",
     "@context": {
       "name":"schema:Text"
     }
