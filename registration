@@ -156,6 +156,181 @@
     "@context": {
       "name":"schema:Text"
     }
+    },
+    "name":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#name",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "council":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#council",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "credentials":{
+    "@id":"https://github.com/sunbird-specs/vc-specs#credentials",
+    "@context": {
+      "name":"schema:Text"
+    }
+    },
+    "phoneNumber":{
+      "@id":"https://github.com/sunbird-specs/vc-specs#phoneNumber",
+      "@context": {
+        "name":"schema:Text"
+      }
+    },
+    "email": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#email",
+      "@context": {
+        "name":"schema:Text"
+      }
+    } , 
+    "dateOfBirth": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#dateOfBirth",
+      "@context": {
+        "name":"schema:Text"
+      }
+    } , 
+    "fathersName": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#fathersName",
+      "@context": {
+        "name":"schema:Text"
+      }
+    } , 
+    "aadhaarNo": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#aadhaarNo",
+      "@context": {
+        "name":"schema:Text"
+      }
+    } , 
+    "courseName": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#courseName",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "nursingCollage": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#nursingCollage",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "joiningMonth": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#joiningMonth",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "joiningYear": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#joiningYear",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "passingMonth": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#passingMonth",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "passingYear": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#passingYear",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "finalYearRollNo": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#passifinalYearRollNongYear",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "armyRegNo": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#armyRegNo",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "date": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#date",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "mothersName": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#mothersName",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "courseState": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#courseState",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "registrationNo": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#registrationNo",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "nurseRegNo": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#nurseRegNo",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "nurseRegDate": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#nurseRegDate",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "marriedName": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#marriedName",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "maidenName": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#maidenName",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "presentAddress": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#presentAddress",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "professionalQualification": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#professionalQualification",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "trainingCenter": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#trainingCenter",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "registrationNumber": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#registrationNumber",
+      "@context": {
+        "name":"schema:Text"
+      }
+    }, 
+    "workPlace": {
+      "@id":"https://github.com/sunbird-specs/vc-specs#professionalQualification",
+      "@context": {
+        "name":"schema:Text"
+      }
     }
   }
+  
 }
