@@ -36,7 +36,7 @@
                 .act-det{margin-top: initial;text-align:center;font-size: 6pt;}.s-division{display:flex;justify-content:space-between;align-items: end;}
                 .s-division .row {flex: 1;align-items: end;}.row1 img{width: 73px;height: 73px;}
                 .subject1{display:flex;margin-bottom:2px}.subject1 p{margin:0 0 5px;}.subject1 .title{width:12rem;color: #2020a7;}.subject1 
-                .sep{width:1rem}.subject1 .result{font-family:Calibri;font-weight:500;flex:0 0 62%}
+                .sep{width:1rem}.subject1 .result{font-family:Calibri;font-weight:500;flex:0 0 62%}.watermark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);WIDTH:50%;z-index:0}
                 
     </style>
 </head>
@@ -44,6 +44,7 @@
     <div class="reg-certificate">
         
         <div class="en-certificate">
+        <div class="watermark"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/watermark.png" alt="web copy certificate"></div>
             <div class="bg-upsmf"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bg-upmf.png" alt="upsmf watermark images" alt="upsmf watermark images"></div>
             <div class="cc-container">
                 <header>
@@ -92,7 +93,7 @@
                             <div class="subject passyear">
                                 <p class="title">Year of Passing</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.passingYear}}</p>
+                                <p class="result">{{credentialSubject.passingMonth}}-{{credentialSubject.passingYear}}</p>
                             </div>
                             <div class="s-division">
                                 <div class="row">
