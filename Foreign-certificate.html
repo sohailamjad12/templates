@@ -39,14 +39,14 @@
                 .sep{width:1rem}.subject1 .result{font-family:Calibri;font-weight:500;flex:0 0 62%}.s-division .row .title1{display: flex;justify-content: start;}.title2{display: flex;justify-content: end;}
                 .subject .data{width:fit-content}.en-details .tobody{margin-left: 1rem;}.c-block{text-align: justify;text-indent: 71px;margin-top: auto;font-size: 16px;}.details1{align-items: end;display: flex;justify-content: end;}
                 .s2{margin-top:88px;font-weight: bold;}.s3{font-weight: bold;}.dateandno{display: flex;flex-direction: column;}.daterow{display: flex;flex-direction: row;justify-content: space-between;font-weight: bold;}
-                .para2{    text-indent: 71px;}.todetails{margin-top: 3px;}.para{margin-top: 12px;}p{margin-top: 1px;margin-bottom: 1px;}
+                .para2{    text-indent: 71px;}.todetails{margin-top: 3px;}.para{margin-top: 12px;}p{margin-top: 1px;margin-bottom: 1px;}.watermark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);WIDTH:50%;z-index:0}
     </style>
 </head>
 <body>
     <div class="reg-certificate">
         
         <div class="en-certificate">
-            <div class="bg-upsmf"><img src="images/bglogo.png" alt="upsmf watermark images"></div>
+            <div class="bg-upsmf"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bg-upmf.png" alt="upsmf logo images" alt="upsmf watermark images"></div>
             <div class="cc-container">
                 <header>
                    
@@ -56,6 +56,7 @@
 
                 </header>
                     <div class="mainSection">
+                                    <div class="watermark"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/foreigncertificate.png" alt="web copy certificate"></div>
                     	 <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bg-upmf.png" alt="upsmf logo images"></div>
                     	 <div class="s-division">
                             <div class="row">
@@ -78,7 +79,7 @@
                             </div>
                             <div class="para">
                                 <span class="d-block"> Sir/Madam,</span>
-                                <p class="c-block">This is certified that <b><u>{{credentialSubject.name}} D/o {{credentialSubject.fathersName}},</u></b> has qualified B.Sc Nursing and She is registered as B.Sc Nurse. She has been registered in this council as per details givem below:-</p>
+                                <p class="c-block">This is certified that <b><u>{{credentialSubject.name}} D/o {{credentialSubject.mothersName}},</u></b> has qualified B.Sc Nursing and She is registered as B.Sc Nurse. She has been registered in this council as per details givem below:-</p>
                             </div>
                             <h4 class="title1"><u>{{credentialSubject.courseName}}</u></h4>
 
@@ -122,7 +123,7 @@
                         </div>
                         <div class="dateandno">
                             <div class="daterow">
-                                <h4>No: {{credentialSubject.refNo}}</h4>
+                                <h4>No: 4667</h4>
                                 <h4>Dated :{{credentialSubject.dated}}</h4>
                             </div>
                         </div>
