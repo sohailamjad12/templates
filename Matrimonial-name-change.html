@@ -52,7 +52,7 @@
             <div class="bg-upsmf"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/mclogoc.jpg" alt="upsmf watermark images"></div>
             <div class="cc-container">
                 <header>
-                    <p class="reg-no"><font style="color:blue">NMC</font> - 85026</p>
+                    <p class="reg-no"><font style="color:blue">{{credentialSubject.courseName}}</font> - {{credentialSubject.regNumber}}</p>
                    
                     <h3>MEDICAL REGISTRATION CERTIFICATE</h3>
                     <h4>OFFICE OF THE MEDICAL COUNCIL, UTTAR PRADESH</h4>
@@ -133,12 +133,12 @@
                             </div>
                             <div >
                                 <p><font style="color:blue">Schedule of the Indian Medical Council Act, 1956</font><b>{{credentialSubject.schedule}}</b></p>
-                                <p><font style="color:blue">Undergone rotatory training from</font> {{credentialSubject.trainingFrom}} <font style="color:blue">to</font> {{credentialSubject.trainingUpto}} <font style="color:blue">at</font> {{credentialSubject.College}}</p>
+                                <p><font style="color:blue">Undergone rotatory training from</font> {{credentialSubject.joiningMonth}}-{{credentialSubject.joiningYear}} <font style="color:blue">to</font> {{credentialSubject.passingMonth}}-{{credentialSubject.passingYear}} <font style="color:blue">at</font> {{credentialSubject.College}}</p>
                             </div>
                             
                             
                             <div  class="issued-on">
-                                <p ><font style="color:blue"> Name change after Matrimony issued on:</font>{{credentialSubject.nameChangeDate}}</p>
+                                <p ><font style="color:blue"> Name change after Matrimony issued on:</font>{{credentialSubject.dated}}</p>
                             </div>
                             
                             <div class="s-division">
