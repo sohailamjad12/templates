@@ -59,7 +59,7 @@
                     <div class="mainSection">
                         <div class="row">
                             <p class="title1"><font style="color:blue" >Ref. No.</font>  {{credentialSubject.refNo}}</p>
-                            <div class="top-logo"><img src="images/dlogoc.jpg" alt="upsmf logo images"></div>
+                            <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/dlogoc.jpg" alt="upsmf logo images"></div>
                             <p class="title2">Date: {{credentialSubject.dated}}</p>
                         </div>
                     </div>
@@ -76,16 +76,14 @@
                                         <h4 class="title1">To,</h4>
                                     </div>
                                     <div class="tobody">
-                                        <span class="d-block"><b>The Secretary</b></span>
-                                        <span class="d-block">Dental Council of India,</span>
-                                        <span class="d-block">Opp. Mata Sundari College for Women,</span>
-                                        <span class="d-block">Aiwan-E-Galib Marg,</span>
-                                        <span class="d-block">New Delhi - 110002</span>
+                                        <span class="d-block"><b>The Registrar</b></span>
+                                        <span class="d-block">{{credentialSubject.address}}</span>
+
         
                                     </div>
                                 </div>
                                 <div class="profile-photo">
-                                    <img src="images/passportphoto.jpg" alt="candidate photo">
+                                    <img src="{{credentialSubject.candidatePic}}" alt="candidate photo">
                                 </div>
 
                             </div>
