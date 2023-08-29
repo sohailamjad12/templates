@@ -46,8 +46,8 @@
     <div class="reg-certificate">
         
         <div class="en-certificate">
-                <div class="watermark"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/foreigncertificate.png" alt="web copy certificate"></div>
-            <div class="bg-upsmf"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bg-upmf.png" alt="upsmf logo images" alt="upsmf watermark images"></div>
+                <div class="watermark"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/goodstanding.png" alt="web copy certificate"></div> 	
+            <div class="bg-upsmf"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bglogo.png" alt="upsmf watermark images"></div>
             <div class="cc-container">
                 <header>
                    
@@ -57,13 +57,13 @@
 
                 </header>
                     <div class="mainSection">
-                    	 <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bg-upmf.png" alt="upsmf logo images"></div>
+                    	 <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bglogo.png" alt="upsmf logo images"></div>
                     	 <div class="s-division">
                             <div class="row">
                                     <p class="title1">Ref. No : {{credentialSubject.refNo}}</p>
                             </div>
                             <div class="row">
-                                <p class="title2">{{credentialSubject.dated}}</p>
+                                <p class="title2">Date: {{credentialSubject.dated}}</p>
                             </div>
                             
                     </div>
@@ -76,17 +76,18 @@
                                 <span class="d-block"><b>Overseas Registration Department</b></span>
                                 <span class="d-block">{{credentialSubject.workPlace}}</span>
 
+
                             </div>
                             <div class="para">
                                 <span class="d-block"> Sir/Madam,</span>
-                                <p class="c-block">This is certified that <b><u>{{credentialSubject.name}} D/o {{credentialSubject.mothersName}},</u></b> has qualified B.Sc Nursing and She is registered as B.Sc Nurse. She has been registered in this council as per details givem below:-</p>
+                                <p class="c-block">This is certified that <b><u>{{credentialSubject.name}}D/o {{credentialSubject.mothersName}},</u></b> has qualified General Nursing & Midwifery and She is registered as General Nursing & Midwifery. She has been registered in this council as per details givem below:-</p>
                             </div>
                             <h4 class="title1"><u>{{credentialSubject.courseName}}</u></h4>
 
                             <div class="subject ">
                                 <p class="title">Registration no</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.regNumber}}</p>
+                                <p class="result">{{credentialSubject.regNumber}} dated {{credentialSubject.dated}}</p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Training period</p>
@@ -97,6 +98,7 @@
                                 <p class="title">Training center</p>
                                 <p class="sep">:</p>
                                 <p class="result"><span class="d-block">{{credentialSubject.trainingCenter}}</span>
+                                    
                                 </p>
                             </div>
                             <div class="subject ">
@@ -123,7 +125,7 @@
                         </div>
                         <div class="dateandno">
                             <div class="daterow">
-                                <h4>No: 4667</h4>
+                                <h4>No: {{credentialSubject.finalYearRollNo}}</h4>
                                 <h4>Dated :{{credentialSubject.dated}}</h4>
                             </div>
                         </div>
