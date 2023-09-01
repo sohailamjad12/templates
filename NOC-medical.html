@@ -61,7 +61,7 @@
                         <div class="row">
                             <p class="title1"><font style="color:blue" >Ref. No.</font>  {{credentialSubject.refNo}}</p>
                             <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/mclogoc.jpg" alt="upsmf logo images"></div>
-                            <p class="title2"><font style="color:blue" >Date:</font> {{credentialSubject.dated}}</p>
+                            <p class="title2"><font style="color:blue" >Date:</font> {{credentialSubject.nurseRegDate}}</p>
                         </div>
                     </div>
                 </header>
@@ -98,7 +98,7 @@
                             <div class="para">
                                 <span class="d-block">Sir/Madam,</span><br>
                                 <p class="c-block">I have to inform you that on verification of records it is found that name of <b>{{credentialSubject.name}}</b>
-                                    D/O{{credentialSubject.fathersName}} M.B.B.S. ({{credentialSubject.nursingCollage}}) bearing U.P. Medical Council Registration No.<b> {{credentialSubject.regNumber}}</b> Dated <b>{{credentialSubject.dated}} </b>is borne on the register of
+                                    D/O{{credentialSubject.fathersName}} M.B.B.S. ({{credentialSubject.nursingCollage}}) bearing U.P. Medical Council Registration No.<b> {{credentialSubject.regNumber}}</b> Dated <b>{{credentialSubject.nurseRegDate}} </b>is borne on the register of
                                     Registered Medical Practitioner maintained by this Council & his/her said registration is still in force and no
                                     disciplinary proceeding has been taken against him/her in past nor is in process till date under U.P. Medical Act.</p><br>
                                     
@@ -117,7 +117,7 @@
                         </div>
                         <div class="mainSection1">
                                 <p class="title1">Ref. No. {{credentialSubject.refNo}}</p>
-                                <p class="title2">Date: {{credentialSubject.dated}}</p>
+                                <p class="title2">Date: {{credentialSubject.nurseRegDate}}</p>
                         </div>
                         <p class="copy">Copy forwarded to <b>{{credentialSubject.name}}</b> (Email- {{credentialSubject.email}}).</p>
                         <p class="note">Note: This NOC is valid for 6 months from date of issue.</p>
