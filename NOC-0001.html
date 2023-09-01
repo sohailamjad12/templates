@@ -70,7 +70,7 @@
                         <div class="row">
                             <p class="title1"><font style="color:blue" >Ref. No.</font>  {{credentialSubject.refNo}}</p>
                             <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/gnmlogoc.jpg" alt="upsmf logo images"></div>
-                            <p class="title2"><font style="color:blue" >Date:</font> {{credentialSubject.dated}}</p>
+                            <p class="title2"><font style="color:blue" >Date:</font> {{credentialSubject.nurseRegDate}}</p>
                         </div>
                     </div>
                 </header>
@@ -103,7 +103,7 @@
                             </div>
                             <div class="para">
                                 <span class="d-block">Sir/Madam,</span><br>
-                                <p class="c-block">Kindly refer your letter no. {{credentialSubject.letterNo}} date {{credentialSubject.dated}} It is to inform you that under mentioned candidates(s) has/have regidstered with this council & the registration is still in force.</p><br>
+                                <p class="c-block">Kindly refer your letter no. {{credentialSubject.letterNo}} date {{credentialSubject.nurseRegDate}} It is to inform you that under mentioned candidates(s) has/have regidstered with this council & the registration is still in force.</p><br>
                                     
                             </div>
                             <table>
@@ -116,7 +116,7 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td><b>{{credentialSubject.regNumber}}</b><br>{{credentialSubject.dated}}</td>
+                                    <td><b>{{credentialSubject.regNumber}}</b><br>{{credentialSubject.nurseRegDate}}</td>
                                     <td><b>{{credentialSubject.name}}</b><br>{{credentialSubject.fathersName}}</td>
                                     <td>{{credentialSubject.qualification}}<br></td>
                                     <td>{{credentialSubject.nursingCollage}}<br></td>
