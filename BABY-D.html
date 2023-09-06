@@ -23,7 +23,7 @@
             display:flex}.h1,h1,h2,h3,h4,h5,h6{line-height:1.5;font-family:Calibri;font-weight:700;margin-bottom:10px}.h3,h3{font-size:1.5rem}
             p{font-size:.875rem}hr{border:none;background-color:rgba(0,0,0,.15);height:1px;margin:10px 0}header h3{margin-top:5px}.mainSection 
             .en-details{width:100%;margin:1.2rem auto 0}.mainSection .cer-name{text-align:center;font-size:20px;color:#ec1f07;margin:1rem 0 0}
-            .law .act,.mainSection .cer-type{text-transform:uppercase;margin:0}.mainSection .cer-type{font-size:28px;color:#2020a7;margin-right: 15%;}
+            .law .act,.mainSection .cer-type{text-transform:uppercase;margin:0}.mainSection .cer-type{font-size:28px;color:#2020a7;margin-right: 35%;}
             .law .act,.org-section span{font-size:11px;font-family:Calibri;font-weight:700}.mainSection .en-details p{font-style: italic    ;}.annot p{word-spacing: 8px;line-height: 30pt;text-align: justify;text-indent: 100px;font-style: italic;}
              .subject{display:flex;margin-bottom:2px}.subject p{margin:0 0 5px;}.subject .title{width:2rem;font-weight: bold;}.subject 
              .sep{width:1rem}.subject .result{font-family:Calibri;flex:0 0 62%}footer{left:0;right:0}
@@ -61,12 +61,12 @@
                     	 <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/diploma_SMF.jpg" alt="upsmf logo images"></div>
                     	 <h4 class="act">Empowered Under INDIAN MEDICAL DEGREE ACT 1916</h4>
 	    		        <h6 class="act-det">(Government of India Notification Department of Education,Health and Lands No.1964, dated 16<sup>th</sup> December 1926 with effect from 15<sup>th</sup>November 1929)</h6>
-                        <h4 class="cer-type">{{credentialSubject.council}}</h4>
+                        <h4 class="cer-type">{{credentialSubject.courseName}}</h4>
                         <div class="en-details">
                             <div class="annot">
                                 <p >This is to certify that <font style='font-weight: 1000;'><u>{{credentialSubject.name}}</u></font>
                                     D/O <u>{{credentialSubject.mothersName}} & {{credentialSubject.fathersName}}</u> has passed the examination of
-                                    {credentialSubject.courseName} held in the month of <u>{credentialSubject.resultDate} from the training centre <u>{{credentialSubject.nursingCollage}}</u> conducted by the<font <font style='font-weight: 1000;'> U.P. State Medical Faculty.</font style>
+                                    {credentialSubject.courseName} held in the month of <u>{credentialSubject.nurseRegDate} from the training centre <u>{{credentialSubject.nursingCollage}}</u> conducted by the<font <font style='font-weight: 1000;'> U.P. State Medical Faculty.</font style>
                                 </p>
                             </div>
                             <p > Signed on behalf of the Governing Body of the U.P. State Medical Faculty</p>
