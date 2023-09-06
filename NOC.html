@@ -49,86 +49,69 @@
 </head>
 <body>
     <div class="reg-certificate">
-        
         <div class="en-certificate">
             <div class="cc-container">
                 <header>
-                   
-                    <h3>UTTAR PRADESH DENTAL COUNCILL</h3>
-                    <p class="address1">5, SARVAPALLI, MALL AVENUE ROAD, LUCKNOW - 226001,PHONE: 0522-2238846</p>
+                    <h3>UTTAR PRADESH DENTAL COUNCIL</h3>
+                    <p class="address1">5, SARVAPALLI, MALL AVENUE ROAD, LUCKNOW - 226001, PHONE: 0522-2238846</p>
                     <div class="mainSection">
                         <div class="row">
-                            <p class="title1"><font style="color:blue" >Ref. No.</font>  {{credentialSubject.refNo}}</p>
+                            <p class="title1"><span style="color: blue;">Ref. No.</span>  {{credentialSubject.refNo}}</p>
                             <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/dlogoc.jpg" alt="upsmf logo images"></div>
-                            <p class="title1"><font style="color:blue" >Date:</font> {{credentialSubject.nurseRegDate}}</p>
+                            <p class="title1"><span style="color: blue;">Date:</span> {{credentialSubject.nurseRegDate}}</p>
                         </div>
                     </div>
                 </header>
-                    
-
-                    	 
-                    
-                         
-                        <div class="en-details">
-                            <div class="det">
-                                <div class="to-de">
-                                    <div class="todetails">
-                                        <h4 class="title1">To,</h4>
-                                    </div>
-                                    <div class="tobody">
-                                        <span class="d-block"><b>The Registrar</b></span>
-                                        <span class="d-block">{{credentialSubject.address}}</span>
-
-        
-                                    </div>
-                                </div>
-                                <div class="profile-photo">
-                                    <img src="{{credentialSubject.candidatePic}}" alt="candidate photo">
-                                </div>
-
+                <div class="en-details">
+                    <div class="det">
+                        <div class="to-de">
+                            <div class="todetails">
+                                <h4 class="title1">To,</h4>
                             </div>
-                            
-
-                            <div>
-                                <br>
-                                <p>Subject :- <u>Issue of No Objection Certificate<b> {{credentialSubject.name}}</b> Registration No. <b>
-{{credentialSubject.regNumber}}</b></u></p>
-                            </div>
-                            <div class="para">
-                                <span class="d-block">Dear Sir/Madam,</span><br>
-                                <p class="c-block">It is certified that after having verified of all the documents of BDS qualification of
-                                   <u><b>{{credentialSubject.name}}</b></u>  who has been registered under part-A with U.P. State Dental
-                                    Council as per provision of the Dentists Act, 1948, on <b>{{credentialSubject.nurseRegDate}}</b> with registration No.<b> {{credentialSubject.regNumber}}.</b>
-                                    The applicant dentist possesses the recognized dental qualification and eligible for registration or
-                                    to continue her/his registration under the relevent provision of the Dentists Act.</p><br>
-                                    <p class="c-block">She/he vide her/his application dated <b>{{credentialSubject.nurseRegDate}}</b> requested for transfer of her/his registration
-                                        from U.P. State Dental Council to <b>{{credentialSubject.courseCouncil}}</b> and for the said
-                                        purpose She/he surrendered the Original Registration Certificate on <b>{{credentialSubject.nurseRegDate}}</b> issued by this
-                                        Council. Therefore, U.P. State Dental Council has no objection for her/his transfer from U.P.
-                                        State Council to <b>{{credentialSubject.courseCouncil}}</b> as per u/s 46A of the Dentists Act.</p><br>
-                                        <p class="c-block">No disciplinary proceedings are pending or contemplated against him/her. There is no
-                                            due/recovery is pending from him/her.</p><br>
-                                        <p class="c-block"><b>This NOC is valid only for 6 months from the date of issuing by U.P. State Dental
-                                            Council for the purpose of transfer of registration u/s 46A of the Dentists Act, 1948</b></p><br>
-                                        <p class="c-block">The name of the applicant shall be deemed to have been deleted from the registrar of U.P.
-                                            State Dental Council, the movement of the transferee State Dental Council register the name the
-                                            dentist after DCI issues its transfer order/NOC u/s 46A of the Dentists Act.</p><br>
-                            </div>
-                            
-                        
-                        <div class="f-division">
-                           <div class="qr">
-                            <img src="{{qrCode}}" alt="qr">
-                           </div>
-
-                            <div class="org-section text-center ">
-                                <p class="s2">Registrar</p>
-                                <p class="s3">U.P. Dental Council</p>
+                            <div class="tobody">
+                                <span class="d-block"><b>The Registrar</b></span>
+                                <span class="d-block">{{credentialSubject.address}}</span>
                             </div>
                         </div>
+                        <div class="profile-photo">
+                            <img src="{{credentialSubject.candidatePic}}" alt="candidate photo">
+                        </div>
+                    </div>
+                    <div>
+                        <br>
+                        <p>Subject :- <u>Issue of No Objection Certificate<b> {{credentialSubject.name}}</b> Registration No. <b>{{credentialSubject.regNumber}}</b></u></p>
+                    </div>
+                    <div class="para">
+                        <span class="d-block">Dear Sir/Madam,</span><br>
+                        <p class="c-block">It is certified that after having verified all the documents of BDS qualification of
+                            <u><b>{{credentialSubject.name}}</b></u>  who has been registered under part-A with U.P. State Dental
+                            Council as per the provision of the Dentists Act, 1948, on <b>{{credentialSubject.nurseRegDate}}</b> with registration No.<b>{{credentialSubject.regNumber}}</b>.
+                            The applicant dentist possesses the recognized dental qualification and is eligible for registration or
+                            to continue her/his registration under the relevant provision of the Dentists Act.</p><br>
+                        <p class="c-block">She/he, via her/his application dated <b>{{credentialSubject.nurseRegDate}}</b>, requested for the transfer of her/his registration
+                            from U.P. State Dental Council to <b>{{credentialSubject.council}}</b> and for the said
+                            purpose, she/he surrendered the Original Registration Certificate on <b>{{credentialSubject.nurseRegDate}}</b> issued by this
+                            Council. Therefore, U.P. State Dental Council has no objection to her/his transfer from U.P.
+                            State Council to <b>{{credentialSubject.council}}</b> as per u/s 46A of the Dentists Act.</p><br>
+                        <p class="c-block">No disciplinary proceedings are pending or contemplated against him/her. There are no
+                            dues/recoveries pending from him/her.</p><br>
+                        <p class="c-block"><b>This NOC is valid only for 6 months from the date of issue by U.P. State Dental
+                            Council for the purpose of transfer of registration u/s 46A of the Dentists Act, 1948</b></p><br>
+                        <p class="c-block">The name of the applicant shall be deemed to have been deleted from the registrar of U.P.
+                            State Dental Council, and the moment the transferee State Dental Council registers the name of the
+                            dentist after DCI issues its transfer order/NOC u/s 46A of the Dentists Act.</p><br>
+                    </div>
+                    <div class="f-division">
+                        <div class="qr">
+                            <img src="{{qrCode}}" alt="qr">
+                        </div>
+                        <div class="org-section text-center">
+                            <p class="s2">Registrar</p>
+                            <p class="s3">U.P. Dental Council</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-                
-
         </div>
     </div>
 </body>
