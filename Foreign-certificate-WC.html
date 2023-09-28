@@ -63,7 +63,7 @@
                                     <p class="title1">Ref. No : {{credentialSubject.refNo}}</p>
                             </div>
                             <div class="row">
-                                <p class="title2">{{credentialSubject.nurseRegDate}}</p>
+                                <p class="title2">{{credentialSubject.date}}</p>
                             </div>
                             
                     </div>
@@ -81,33 +81,33 @@
                                 <span class="d-block"> Sir/Madam,</span>
                                 <p class="c-block">This is certified that <b><u>{{credentialSubject.name}} D/o {{credentialSubject.mothersName}},</u></b> has qualified B.Sc Nursing and She is registered as B.Sc Nurse. She has been registered in this council as per details givem below:-</p>
                             </div>
-                            <h4 class="title1"><u>{{credentialSubject.courseName}}</u></h4>
+                            <h4 class="title1"><u>{{credentialSubject.professionalQualification}}</u></h4>
 
                             <div class="subject ">
                                 <p class="title">Registration no</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.regNumber}}</p>
+                                <p class="result">{{credentialSubject.registrationNumber}}</p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Training period</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.joiningMonth}}-{{credentialSubject.joiningYear}} To {{credentialSubject.passingMonth}}-{{credentialSubject.passingYear}}</p>
+                                <p class="result">{{credentialSubject.date}}</p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Training center</p>
                                 <p class="sep">:</p>
-                                <p class="result"><span class="d-block">{{credentialSubject.nursingCollage}}</span>
+                                <p class="result"><span class="d-block">{{credentialSubject.trainingCenter}}</span>
                                 </p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Validity of Registration</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.validityOfRegistration}}</p>
+                                <p class="result">{{credentialSubject.validityUpto}}</p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Date of Birth</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.dateOfBirth}}</p>
+                                <p class="result">{{credentialSubject.dob}}</p>
                             </div>
                         </div>
                         <div class="para">
@@ -124,11 +124,11 @@
                         <div class="dateandno">
                             <div class="daterow">
                                 <h4>No: 4667</h4>
-                                <h4>Dated :{{credentialSubject.nurseRegDate}}</h4>
+                                <h4>Dated :{{credentialSubject.date}}</h4>
                             </div>
                         </div>
                         <div class="para2">
-                            <p>Copy forwarded<u><b> {{credentialSubject.name}} D/o {{credentialSubject.mothersName}}, {{credentialSubject.address}},</b></u> has for information.</p>
+                            <p>Copy forwarded<u><b> {{credentialSubject.name}} D/o {{credentialSubject.mothersName}}, {{credentialSubject.presentAddress}},</b></u> has for information.</p>
                         </div>
                         <div class="f-division">
                            
