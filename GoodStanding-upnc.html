@@ -59,7 +59,7 @@
                     	 <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bglogo.png" alt="upsmf logo images"></div>
                     	 <div class="s-division">
                             <div class="row">
-                                    <p class="title1">Ref. No : {{credentialSubject.certificateNumber}}</p>
+                                    <p class="title1">Ref. No : {{credentialSubject.registrationNumber}}</p>
                             </div>
                             <div class="row">
                                 <p class="title2">Date: {{credentialSubject.courseDate}}</p>
@@ -86,7 +86,7 @@
                             <div class="subject ">
                                 <p class="title">Registration no</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.regNumber}} dated {{credentialSubject.joiningDate}}</p>
+                                <p class="result">{{credentialSubject.registrationNumber}} dated {{credentialSubject.joiningDate}}</p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Training period</p>
@@ -96,19 +96,19 @@
                             <div class="subject ">
                                 <p class="title">Training center</p>
                                 <p class="sep">:</p>
-                                <p class="result"><span class="d-block">{{credentialSubject.nursingCollage}}</span>
+                                <p class="result"><span class="d-block">{{credentialSubject.trainingCenter}}</span>
                                     
                                 </p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Validity of Registration</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.validityOfRegistration}}</p>
+                                <p class="result">{{credentialSubject.courseDate}}</p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Date of Birth</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.dateOfBirth}}</p>
+                                <p class="result">{{credentialSubject.joiningDate}}</p>
                             </div>
                         </div>
                         <div class="para">
@@ -124,12 +124,12 @@
                         </div>
                         <div class="dateandno">
                             <div class="daterow">
-                                <h4>No: {{credentialSubject.finalYearRollNo}}</h4>
+                                <h4>No: {{credentialSubject.registrationNumber}}</h4>
                                 <h4>Dated :{{credentialSubject.courseDate}}</h4>
                             </div>
                         </div>
                         <div class="para2">
-                            <p>Copy forwarded<u><b> {{credentialSubject.name}} D/o {{credentialSubject.mothersName}}, {{credentialSubject.address}},</b></u> has for information.</p>
+                            <p>Copy forwarded<u><b> {{credentialSubject.name}} D/o {{credentialSubject.mothersName}}, {{credentialSubject.presentAddress}},</b></u> has for information.</p>
                         </div>
                         <div class="f-division">
                            
