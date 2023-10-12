@@ -256,6 +256,12 @@
       "@context": {
         "name": "schema:Text"
       }
+    },
+    "refNo": {
+      "@id": "https://github.com/sunbird-specs/vc-specs#refNo",
+      "@context": {
+        "name": "schema:Text"
+      }
     }
   }
 }
