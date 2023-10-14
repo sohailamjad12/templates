@@ -55,9 +55,9 @@
                    
                 </header>
                     <div class="mainSection">
-                    	 <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bg-upmf.png"></div>
-                    	 <h4 class="act">Empowered Under INDIAN MEDICAL DEGREE ACT 1916</h4>
-	    		        <h6 class="act-det">(Government of India Notification Department of Education,Health and Lands No.1964, dated 16<sup>th</sup> December 1926 with effect from 15<sup>th</sup>November 1929)</h6>
+                         <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bg-upmf.png"></div>
+                         <h4 class="act">Empowered Under INDIAN MEDICAL DEGREE ACT 1916</h4>
+                        <h6 class="act-det">(Government of India Notification Department of Education,Health and Lands No.1964, dated 16<sup>th</sup> December 1926 with effect from 15<sup>th</sup>November 1929)</h6>
                         <h4 class="cer-name">ENROLLMENT / REGISTRATION CERTIFICATE</h4>
                         <h4 class="cer-type">{{credentialSubject.courseName}}</h4>
                         <div class="en-details">
@@ -108,6 +108,11 @@
                                         <p class="sep">:</p>
                                         <p class="result space-wid">{{credentialSubject.nurseRegDate}}</p>
                                     </div>
+                                    <div class="subject1 ">
+                                        <p class="title">Fee Receipt No</p>
+                                        <p class="sep">:</p>
+                                        <p class="result">{{credentialSubject.feeReciptNo}}</p>
+                                    </div>
                                 </div>
                                 <div class="row1">
                                     <img src="{{qrCode}}">
@@ -124,7 +129,7 @@
                         <div class="f-division">
                             <div class="profile-scan">
                                 <div class="studentID"><img src="{{credentialSubject.candidatePic}}" alt="student ID Photo"></div>
-    
+                                <div class="studentID"><img src="{{credentialSubject.candidateSignature}}" alt="student Signature Photo"></div>
                             </div>
                             <div class="org-section text-center primary-color">
                                 <span class="d-block">Secretary</span>
