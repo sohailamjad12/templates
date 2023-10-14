@@ -36,7 +36,9 @@
                 .act-det{margin-top: initial;text-align:center;font-size: 6pt;}.s-division{display:flex;justify-content:space-between;align-items: end;}
                 .s-division .row {flex: 1;align-items: end;}.row1 img{width: 73px;height: 73px;}
                 .subject1{display:flex;margin-bottom:2px}.subject1 p{margin:0 0 5px;}.subject1 .title{width:12rem;color: #2020a7;}.subject1 
-                .sep{width:1rem}.subject1 .result{font-family:Calibri;font-weight:500;flex:0 0 62%}
+                .sep{width:1rem}.subject1 .result{font-family:Calibri;font-weight:500;flex:0 0 62%} .space-wid{
+                    max-width: 25%;
+                }
                 
     </style>
 </head>
@@ -99,12 +101,12 @@
                                     <div class="subject1 ">
                                         <p class="title">Place</p>
                                         <p class="sep">:</p>
-                                        <p class="result">Lucknow</p>
+                                        <p class="result space-wid">Lucknow</p>
                                     </div>
                                     <div class="subject1 ">
                                         <p class="title">Dated</p>
                                         <p class="sep">:</p>
-                                        <p class="result">{{credentialSubject.nurseRegDate}}</p>
+                                        <p class="result space-wid">{{credentialSubject.nurseRegDate}}</p>
                                     </div>
                                     <div class="subject1 ">
                                         <p class="title">Fee Receipt No</p>
