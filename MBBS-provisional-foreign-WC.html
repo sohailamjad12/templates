@@ -41,7 +41,7 @@
                 .f-division .profile-scan1 .barcode{width:6rem;display:flex;height: 2rem;} .f-division .profile-scan1{align-items: end;display: flex;flex-direction: column;}
                 .f-division .org-section .logoimage {width: 70%;display: flex;margin-left: 1rem;margin-top: 1rem;}.mainSection .en-details .annotion {font-weight: 700;}.subject1 .title1{color: #043aff;font-weight: 700;}
                 header .reg-no{display: flex;} footer .f-division .studentID2{width: 50%;margin-left: 2rem;}
-                .issued-on{margin-top: 4rem;}
+                .issued-on{margin-top: 4rem;}.watermark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);WIDTH:50%;z-index:0}
                 
     </style>
 </head>
@@ -49,6 +49,7 @@
     <div class="reg-certificate">
         
         <div class="en-certificate">
+                                                    <div class="watermark"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/watermark.png" alt="web copy certificate"></div>
             <div class="bg-upsmf"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/mclogoc.jpg" alt="upsmf watermark images"></div>
             <div class="cc-container">
                 <header>
@@ -127,7 +128,7 @@
                                 <p class="result">{{credentialSubject.nurseRegDate}}, Lucknow(U.P)</p>
                             </div>
                             <div >
-                                <p><font style="color:blue">Valid for compulsory rotating internship at the </font>{{credentialSubject.nursingCollage}}<font style="color:blue"> only and no other purpose.</font></p>
+                                <p><font style="color:blue">Valid for compulsory rotating internship only and no other purpose.</font></p>
                             </div>
                             
                         </div>
@@ -165,4 +166,3 @@
     </div>
 </body>
 </html>
-
