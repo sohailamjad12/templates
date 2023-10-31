@@ -59,10 +59,10 @@
                     	 <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bglogo.png" alt="upsmf logo images"></div>
                     	 <div class="s-division">
                             <div class="row">
-                                    <p class="title1">Ref. No : {{credentialSubject.registrationNumber}}</p>
+                                    <p class="title1">Ref. No : {{credentialSubject.certificateNumber}}</p>
                             </div>
                             <div class="row">
-                                <p class="title2">Date: {{credentialSubject.courseDate}}</p>
+                                <p class="title2">Date: {{credentialSubject.nurseRegDate}}</p>
                             </div>
                             
                     </div>
@@ -77,7 +77,7 @@
                             <div class="subject ">
                                 <p class="title">Registration no</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.registrationNumber}} dated {{credentialSubject.joiningDate}}</p>
+                                <p class="result">{{credentialSubject.registrationNumber}} dated {{credentialSubject.registrationIssueDate}}</p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Training period</p>
@@ -99,7 +99,7 @@
                             <div class="subject ">
                                 <p class="title">Date of Birth</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.joiningDate}}</p>
+                                <p class="result">{{credentialSubject.dob}</p>
                             </div>
                         </div>
                         <div class="para">
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         <div class="para2">
-                            <p>Copy forwarded<u><b> {{credentialSubject.name}} D/o {{credentialSubject.mothersName}}, {{credentialSubject.presentAddress}},</b></u> has for information.</p>
+                            <p>Copy forwarded<u><b> {{credentialSubject.name}} C/O {{credentialSubject.mothersName}}, {{credentialSubject.presentAddress}},</b></u> has for information.</p>
                         </div>
                         <div class="f-division">
                            
