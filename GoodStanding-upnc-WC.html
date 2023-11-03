@@ -15,7 +15,7 @@
        font-weight:400;font-style:normal}@font-face{font-family:Calibri;src:url(https://fonts.gstatic.com/l/font?kit=J7aanpV-BGlaFfdAjAo9_pxqHxIZrCE&skey=cd2dd6afe6bf0eb2&v=v15) format('woff2');
        font-weight:700;font-style:normal}*,::after,::before{box-sizing:border-box}
        html{font-size:16px}body{color:#0e0e10;font-family:Calibri;font-weight:400}img{max-width:100%}.mt-0{margin-top:0}.mt-5{margin-top:.3125rem}.mt-10{margin-top:10px}.mt-16{margin-top:1rem}
-       .mb-5{margin-bottom:.3125rem}.mb-10{margin-bottom:.625rem}.mb-15{margin-bottom:.9375rem}.ft-8{font-size:.5rem}.alpha-5{opacity:.5}
+       .mb-5{margin-bottom:.3125rem}.mb-10{margin-bottom:.625rem}.mb-15{margin-bottom:.9375rfem}.ft-8{font-size:.5rem}.alpha-5{opacity:.5}
        .small{font-size:.625rem;line-height:.75rem;color: red;}.opt-8{opacity:80%}.text-right{text-align:right}.mainSection .cer-type,.text-center,header h3,header
         p{text-align:center}.secondaryColor{color:#2020a7}.cc-container{position:relative;z-index:1}.bg-upsmf,
         footer{position:absolute;bottom:0}.bg-upsmf{z-index:0;left:50%;top:58%;width:321px;margin:0 auto;transform:translate(-50%,-50%);opacity:.15;pos}
@@ -39,14 +39,13 @@
                 .sep{width:1rem}.subject1 .result{font-family:Calibri;font-weight:500;flex:0 0 62%}.s-division .row .title1{display: flex;justify-content: start;}.title2{display: flex;justify-content: end;}
                 .subject .data{width:fit-content}.en-details .tobody{margin-left: 1rem;}.c-block{text-align: justify;text-indent: 71px;margin-top: auto;font-size: 16px;}.details1{align-items: end;display: flex;justify-content: end;}
                 .s2{margin-top:88px;font-weight: bold;}.s3{font-weight: bold;}.dateandno{display: flex;flex-direction: column;}.daterow{display: flex;flex-direction: row;justify-content: space-between;font-weight: bold;}
-                .para2{    text-indent: 71px;}.todetails{margin-top: 3px;}.para{margin-top: 12px;}p{margin-top: 1px;margin-bottom: 1px;}.watermark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);WIDTH:50%;z-index:0}
+                .para2{    text-indent: 71px;}.todetails{margin-top: 3px;}.para{margin-top: 12px;}p{margin-top: 1px;margin-bottom: 1px;}
     </style>
 </head>
 <body>
     <div class="reg-certificate">
         
         <div class="en-certificate">
-                <div class="watermark"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/goodstanding.png" alt="web copy certificate"></div> 	
             <div class="bg-upsmf"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bglogo.png" alt="upsmf watermark images"></div>
             <div class="cc-container">
                 <header>
@@ -60,34 +59,25 @@
                     	 <div class="top-logo"><img src="https://raw.githubusercontent.com/kumarpawantarento/templates/main/img/bglogo.png" alt="upsmf logo images"></div>
                     	 <div class="s-division">
                             <div class="row">
-                                    <p class="title1">Ref. No : {{credentialSubject.registrationNumber}}</p>
+                                    <p class="title1">Ref. No : {{credentialSubject.certificateNumber}}</p>
                             </div>
                             <div class="row">
-                                <p class="title2">Date: {{credentialSubject.courseDate}}</p>
+                                <p class="title2">Date: {{credentialSubject.nurseRegDate}}</p>
                             </div>
                             
                     </div>
                          
                         <div class="en-details">
-                            <div class="todetails">
-                                <h4 class="title1">To,</h4>
-                            </div>
-                            <div class="tobody">
-                                <span class="d-block"><b>Overseas Registration Department</b></span>
-                                <span class="d-block">{{credentialSubject.workPlace}}</span>
-
-
-                            </div>
                             <div class="para">
                                 <span class="d-block"> Sir/Madam,</span>
-                                <p class="c-block">This is certified that <b><u>{{credentialSubject.name}}D/o {{credentialSubject.mothersName}},</u></b> has qualified General Nursing & Midwifery and She is registered as General Nursing & Midwifery. She has been registered in this council as per details givem below:-</p>
+                                <p class="c-block">This is certified that <b><u>{{credentialSubject.name}} C/O {{credentialSubject.fathersName}},</u></b> has qualified General Nursing & Midwifery and She is registered as General Nursing & Midwifery. She has been registered in this council as per details givem below:-</p>
                             </div>
                             <h4 class="title1"><u>{{credentialSubject.courseName}}</u></h4>
 
                             <div class="subject ">
                                 <p class="title">Registration no</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.registrationNumber}} dated {{credentialSubject.joiningDate}}</p>
+                                <p class="result">{{credentialSubject.registrationNumber}} dated {{credentialSubject.registrationIssueDate}}</p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Training period</p>
@@ -104,12 +94,12 @@
                             <div class="subject ">
                                 <p class="title">Validity of Registration</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.courseDate}}</p>
+                                <p class="result">Life-Long (Permanent)</p>
                             </div>
                             <div class="subject ">
                                 <p class="title">Date of Birth</p>
                                 <p class="sep">:</p>
-                                <p class="result">{{credentialSubject.joiningDate}}</p>
+                                <p class="result">{{credentialSubject.dob}}</p>
                             </div>
                         </div>
                         <div class="para">
@@ -130,7 +120,7 @@
                             </div>
                         </div>
                         <div class="para2">
-                            <p>Copy forwarded<u><b> {{credentialSubject.name}} D/o {{credentialSubject.mothersName}}, {{credentialSubject.presentAddress}},</b></u> has for information.</p>
+                            <p>Copy forwarded<u><b> {{credentialSubject.name}} C/O {{credentialSubject.mothersName}}, {{credentialSubject.presentAddress}},</b></u> has for information.</p>
                         </div>
                         <div class="f-division">
                            
